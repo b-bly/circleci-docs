@@ -81,7 +81,7 @@ jobs:
       - image: cimg/go:1.17
         auth:
           username: mydockerhub-user
-          password: $DOCKERHUB_PASSWORD  # context / project UI env-var reference
+          password: $DOCKER_PASS  # context / project UI env-var reference
     steps:
       - checkout
       # ... steps for building/testing app ...
